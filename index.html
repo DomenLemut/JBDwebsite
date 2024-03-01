@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <link rel="icon" href="./img/JBD_sticker.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>?</title>
+  </head>
+  <body>
+    <div class="container animate glow delay-1" id="container">
+      <div class="container1">
+        <div class="description-container">
+          <div>Pozdravljen!</div>
+          <div>
+            Očitno si bil uspešen pri iskanju naše skrite qr-kode, čestitke!<br />
+            Jeti 23.4. v Kino Šiški predstavljamo album Sladki problemi, ki
+            uradno izzide 15. aprila, odspodaj pa imate dostop do zamegljene
+            slike še neznanih komadov iz albuma.
+          </div>
+          <div>Lep pozdrav, Tvoji Jeti</div>
+          <div>
+            <a
+              href="https://www.eventim.si/si/vstopnice/jet-black-diamonds-ljubljana-kino-siska-631199/event.html"
+              >!!Vstopnica v raj v Kinu Šiška!!</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container1">
+        <div class="timer-container animate glow delay-2">
+          <div class="boxes">
+            <div class="box">
+              <div class="box-timer" id="days"></div>
+              <div class="box-description">dni</div>
+            </div>
+            <div class="box">
+              <div class="box-timer" id="hours"></div>
+              <div class="box-description">ur</div>
+            </div>
+            <div class="box">
+              <div class="box-timer" id="minutes"></div>
+              <div class="box-description">minut</div>
+            </div>
+            <div class="box">
+              <div class="box-timer" id="seconds"></div>
+              <div class="box-description">sekund</div>
+            </div>
+          </div>
+          <div class="timer-title">do izzida Sladkih problemov</div>
+          <div class="timer" id="timer"></div>
+        </div>
+      </div>
+      <div class="container1">
+        <div class="music-container animate glow delay-3" id="music-container">
+          <audio src="audio/4 od 10.mp3" id="audio"></audio>
+
+          <div class="img-container">
+            <img src="img/JBD_curvysticker.png" alt="cover_photo" />
+          </div>
+
+          <div class="title" id="title">Naslov lih slucajno</div>
+
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+
+          <div class="navigation">
+            <button id="prev" class="action-btn">
+              <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-btn">
+              <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-btn">
+              <i class="fas fa-forward"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="link-container">
+      <a
+        href="https://www.facebook.com/jetblackdiamondsofficial"
+        class="btn animate glow delay-4"
+        ><img src="icons/fb.svg" class="nav-image"
+      /></a>
+      <a
+        href="https://open.spotify.com/artist/5LSypHsHFXrVARPna9mVHt"
+        class="btn animate glow delay-5"
+        ><img src="icons/sf.svg" class="nav-image"
+      /></a>
+      <a
+        href="https://www.youtube.com/channel/UCE57oY8kOPDbe88cXA1Y2dA"
+        class="btn animate glow delay-6"
+        ><img src="icons/yt.svg" class="nav-image"
+      /></a>
+      <a href="" class="btn animate glow delay-7"
+        ><img src="icons/fb.svg" class="nav-image"
+      /></a>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/countdown.js"></script>
+  </body>
+</html>
