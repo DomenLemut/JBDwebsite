@@ -18,75 +18,39 @@
   </head>
   <body>
     <div class="container animate glow delay-1" id="container">
-      <div class="container1">
-        <div class="description-container">
-          <div>Pozdravljen!</div>
-          <div>
-            Očitno si bil uspešen pri iskanju naše skrite qr-kode, čestitke!<br />
-            Jeti 23.4. v Kino Šiški predstavljamo album Sladki problemi, ki
-            uradno izzide 15. aprila, odspodaj pa imate dostop do zamegljene
-            slike še neznanih komadov iz albuma.
-          </div>
-          <div>Lep pozdrav, Tvoji Jeti</div>
-          <div>
-            <a
-              href="https://www.eventim.si/si/vstopnice/jet-black-diamonds-ljubljana-kino-siska-631199/event.html"
-              >!!Vstopnica v raj v Kinu Šiška!!</a
-            >
-          </div>
+      <div class="description-container">
+        <div>Pozdravljen!</div>
+        <div>
+          Uspešen si bil pri iskanju naše skrite qr-kode, čestitke!<br />
+          Jeti 23.4. v Kino Šiški predstavljamo album Sladki problemi, ki uradno
+          izzide 15. aprila, odspodaj pa imate dostop do zamegljene slike še
+          neznanih komadov iz albuma.
         </div>
+        <div>Lep pozdrav, Tvoji Jeti</div>
       </div>
-      <!--
-      <div class="container1">
-        <div class="timer-container animate glow delay-2">
-          <div class="boxes">
-            <div class="box">
-              <div class="box-timer" id="days"></div>
-              <div class="box-description">dni</div>
-            </div>
-            <div class="box">
-              <div class="box-timer" id="hours"></div>
-              <div class="box-description">ur</div>
-            </div>
-            <div class="box">
-              <div class="box-timer" id="minutes"></div>
-              <div class="box-description">minut</div>
-            </div>
-            <div class="box">
-              <div class="box-timer" id="seconds"></div>
-              <div class="box-description">sekund</div>
-            </div>
-          </div>
-          <div class="timer-title">do izzida Sladkih problemov</div>
-          <div class="timer" id="timer"></div>
+      <div class="music-container animate glow delay-3" id="music-container">
+        <audio src="audio/4 od 10.mp3" id="audio"></audio>
+
+        <div class="img-container">
+          <img src="img/JBD_curvysticker.png" alt="cover_photo" />
         </div>
-      </div>
-    -->
-      <div class="container1">
-        <div class="music-container animate glow delay-3" id="music-container">
-          <audio src="audio/4 od 10.mp3" id="audio"></audio>
 
-          <div class="img-container">
-            <img src="img/JBD_curvysticker.png" alt="cover_photo" />
-          </div>
+        <div class="title" id="title">Naslov lih slucajno</div>
 
-          <div class="title" id="title">Naslov lih slucajno</div>
+        <div class="progress-container" id="progress-container">
+          <div class="progress" id="progress"></div>
+        </div>
 
-          <div class="progress-container" id="progress-container">
-            <div class="progress" id="progress"></div>
-          </div>
-
-          <div class="navigation">
-            <button id="prev" class="action-btn">
-              <i class="fas fa-backward"></i>
-            </button>
-            <button id="play" class="action-btn">
-              <i class="fas fa-play"></i>
-            </button>
-            <button id="next" class="action-btn">
-              <i class="fas fa-forward"></i>
-            </button>
-          </div>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+          </button>
         </div>
       </div>
     </div>

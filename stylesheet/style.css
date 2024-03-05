@@ -1,10 +1,14 @@
+@font-face {
+  font-family: "Geist";
+  src: url("https://pham.codes/d/GeistMonoVF.woff2") format("woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -13,7 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(216, 61, 61);
+  font-family: "Geist";
 }
 
 .container {
@@ -29,25 +33,24 @@ body {
   flex: 1;
 }
 
-.container1 {
-}
-
 .music-container {
+  height: 500px;
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
+
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
   padding: 20px;
   background-color: rgb(98, 97, 97);
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border: 3px solid black;
+  box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.2) -10px 10px,
+    rgba(0, 0, 0, 0.1) -15px 15px;
 }
 
 .description-container {
-  height: 450px;
+  height: 500px;
   max-width: 500px;
   min-width: 250px;
   padding: 40px;
@@ -55,34 +58,31 @@ body {
   flex-direction: column;
   justify-content: space-between;
   flex-wrap: nowrap;
-  border: 2px solid black;
+  border: 3px solid black;
+
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.2) -5px 5px, rgba(0, 0, 0, 0.1) -10px 10px,
-    rgba(0, 0, 0, 0.05) -15px 15px;
+  box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.2) -10px 10px,
+    rgba(0, 0, 0, 0.1) -15px 15px;
+  background-color: rgb(98, 97, 97);
+  color: rgb(205, 205, 205);
 }
 
-.timer-container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  align-content: center;
-}
-
-.timer-title {
-  font-family: "Dekko font";
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgb(0, 0, 0);
+.siska-container {
+  background-color: rgb(49, 49, 49);
+  border-radius: 20px;
   padding: 20px;
-  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px,
+    rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
-.timer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.img-container1 img {
+  height: 100px;
+  width: auto;
+  border-radius: 5px;
 }
 
 .title {
@@ -110,8 +110,6 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  box-shadow: rgb(216, 61, 61, 0.4) -5px 5px, rgba(216, 61, 61, 0.2) -10px 10px,
-    rgba(216, 61, 61, 0.1) -15px 15px;
 }
 
 .box-timer {
@@ -127,7 +125,6 @@ body {
 
 .img-container img {
   width: 300px;
-  height: 300px;
   height: auto;
   border-radius: 5px;
 }
@@ -186,11 +183,6 @@ body {
   }
 }
 
-@media (max-width: 1628px) {
-  .timer-container {
-  }
-}
-
 body {
   background: linear-gradient(
     -45deg,
@@ -199,20 +191,9 @@ body {
     #686a6b,
     #5c5c5c
   );
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  background-image: url("https://wallpapers.com/images/featured/paper-texture-background-zlvqcgwohwvd642j.jpg");
+  background-size: cover;
+  background-attachment: scroll; /* optional: to fix the background */
 }
 
 .animate {
