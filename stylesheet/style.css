@@ -146,7 +146,8 @@ body {
 .link-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 50px;
 }
 
