@@ -18,6 +18,9 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "Geist";
+  background-image: url("https://wallpapers.com/images/featured/paper-texture-background-zlvqcgwohwvd642j.jpg");
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 .container {
@@ -31,6 +34,7 @@ body {
   align-content: center;
   gap: 100px;
   flex: 1;
+  background-image: url("img/textured-paper.png");
 }
 
 .music-container {
@@ -56,7 +60,7 @@ body {
   padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
   border: 3px solid black;
 
@@ -163,19 +167,6 @@ body {
   }
 }
 
-body {
-  background: linear-gradient(
-    -45deg,
-    #ffffff,
-    rgb(205, 205, 205),
-    #686a6b,
-    #5c5c5c
-  );
-  background-image: url("https://wallpapers.com/images/featured/paper-texture-background-zlvqcgwohwvd642j.jpg");
-  background-size: cover;
-  background-attachment: scroll; /* optional: to fix the background */
-}
-
 .animate {
   animation-duration: 0.75s;
   animation-delay: 0.5s;
@@ -209,18 +200,21 @@ body {
 .delay-2 {
   animation-delay: 0.75s;
 }
-.delay-3 {
-  animation-delay: 1s;
-}
 .delay-4 {
-  animation-delay: 1.5s;
+  animation-delay: 1.2s;
 }
 .delay-5 {
-  animation-delay: 1.7s;
+  animation-delay: 1.35s;
 }
 .delay-6 {
-  animation-delay: 1.9s;
+  animation-delay: 1.5s;
 }
 .delay-7 {
-  animation-delay: 2.1s;
+  animation-delay: 1.65s;
+}
+.delay-8 {
+  animation-delay: 1.8s;
+}
+.delay-9 {
+  animation-delay: 1.95s;
 }
